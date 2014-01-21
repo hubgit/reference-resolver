@@ -1,0 +1,34 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>CrossRef Reference Lookup</title>
+
+<link rel="stylesheet" href="search.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://git.macropus.org/jquery-ajax-queue/jquery.ajaxQueue.js"></script>
+<script src="http://git.macropus.org/jquery-microdata/jquery.microdata.js"></script>
+<script src="lib/handlebars.js"></script>
+<script src="lib/jquery.deparam.js"></script>
+<script src="search.js"></script>
+
+<form>
+	<p>Enter a list of references, then press <button type="submit">Resolve</button></p>
+	<textarea></textarea>
+</form>
+
+<ol></ol>
+
+<script id="template" type="text/x-handlebars-template">
+  <li>
+  	<div class="score">{{score}}</div>
+
+	<article itemscope itemtype="http://schema.org/ScholarlyArticle">
+	  	{{#each au}}<span itemprop="author">{{.}}</span>{{#if @last}}{{else}}, {{/if}}{{/each}}.
+	  	{{#if url}}<a itemprop="url" href="{{url}}">{{/if}}<span itemprop="title">{{atitle}}</span>{{#if url}}</a>{{/if}}.
+	  	<span itemprop="journal">{{jtitle}}</span>
+	  	{{#if volume}}<span itemprop="volume">{{volume}}</span>{{/if}}{{#if issue}}(<span itemprop="issue">{{issue}}</span>){{/if}}{{#if spage}}:<span itemprop="page">{{spage}}</span>{{/if}}
+    </article>
+
+    <div class="input">{{text}}</div>
+  </li>
+</script>

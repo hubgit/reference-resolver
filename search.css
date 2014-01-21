@@ -1,0 +1,62 @@
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	display: flex;
+	margin: 0;
+	font-family: sans-serif;
+}
+
+body > * {
+	flex: 1;
+	height: 100%;
+	overflow-y: auto;
+	overflow-x: hidden;
+	margin: 0;
+	border: none;
+	box-sizing: border-box;
+}
+
+p {
+	margin: 0.5rem;
+	padding: 0;
+}
+
+form {
+	display: flex;
+	flex-flow: column;
+}
+
+textarea {
+	flex: 1;
+	padding: 0.5rem;
+}
+
+ol {
+	padding-top: 1rem;
+}
+
+li {
+	padding-bottom: 1rem;
+}
+
+li.error {
+	color: red;
+}
+
+article {
+	margin: 1rem 0;
+}
+
+.input {
+	color: gray;
+}
+
+.score {
+	display: inline-block;
+	padding: 2px 5px;
+	background: #444;
+	color: white;
+}
