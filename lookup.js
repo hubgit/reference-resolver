@@ -1,26 +1,39 @@
-var console = window.console || { log: function() {} };
-
 $(function() {
     var input = $('textarea');
-    var form = $('form');
     var output = $('tbody');
-
     var template = Handlebars.compile($('#template').html());
 
+    // handle form submissions
+    $('form').on('submit', function(event) {
+        event.preventDefault();
+        output.empty();
+        input.val().split("\n").forEach(resolve);
+    });
+
+    // load the example list
+    $.get('example-small.txt', function(data) {
+        input.val(data);
+    }, 'text');
+
+    // fill data into the table row
     var show = function(row, data, text, score) {
-        console.log(data);
+        //console.log(data);
 
-        data.text = text;
-        data.score = Math.round(score);
+        $.extend(data, {
+            text: text,
+            score: Math.round(score),
+            confidence: confidence(score),
+            year: data.issued['date-parts'][0][0],
+        })
 
-        if (score > 6) {
-            data.confidence = 'high';
-        } else if (score > 3) {
-            data.confidence = 'medium';
-        } else {
-            data.confidence = 'low';
-        }
+        formatAuthors(data);
 
+        row.append(template(data));
+        row.prettyTextDiff({ cleanup: true });
+    };
+
+    // normalise the author names
+    var formatAuthors = function(data) {
         if (typeof data.author == 'string') {
             data.author = [data.author];
         }
@@ -33,59 +46,44 @@ $(function() {
 
         data.etal = data.author.length > 10;
         data.author = data.author.slice(0, 10);
-
-        data.year = data.issued['date-parts'][0][0];
-
-        row.append(template(data));
-        row.prettyTextDiff({ cleanup: true });
     };
 
-    var fetch = function (row, url, text, score) {
-        var request = $.ajax({
-            url: url.replace(/dx.doi.org/, 'data.crossref.org'),
-            headers: { 'Accept': 'application/citeproc+json' }
-        });
+    // a text value for the confidence score
+    var confidence = function(score) {
+        if (score > 6) {
+            return 'high';
+        }
 
-        request.done(function(data) {
-            show(row, data, text, score);
-        }).fail(function() {
-            show(row, {}, text);
-        });
+        if (score > 3) {
+            return 'medium';
+        }
+
+        return 'low';
     };
 
-    var search = function(index, text) {
+    // resolve the reference text to structured data
+    var resolve = function(text) {
         var row = $('<tr/>').appendTo(output);
 
-        var request = $.ajax({
-            url: 'http://search.crossref.org/dois',
-            data: { q: text },
-            dataType: 'json'
-        });
-
-        request.done(function(data) {
-            var result = data[0];
-
-            if (result) {
-                fetch(row, result.doi, text, result.score);
-            } else {
-                show(row, {}, text);
-            }
-        }).fail(function() {
+        var handleFail = function() {
             show(row, {}, text);
+        }
+
+        var request = $.crossref.search(text, { rows: 1 }).fail(handleFail);
+
+        request.done(function(results) {
+            if (results && results.length) {
+                var data = results[0];
+                var score = data.score;
+
+                var request = $.crossref.fetch(data.doi, 'application/citeproc+json').fail(handleFail);
+
+                request.done(function(data) {
+                    show(row, data, text, score);
+                });
+            } else {
+                show(row, {}, text, 0);
+            }
         });
     };
-
-    var update = function(event) {
-        event.preventDefault();
-        output.empty();
-        var items = input.val().split("\n");
-        $.each(items, search);
-    };
-
-    form.on('submit', update);
-
-    // load the example list
-    $.get('example.txt', function(data) {
-        input.val(data);
-    }, 'text');
 })

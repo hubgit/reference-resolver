@@ -4,16 +4,17 @@
 
 <link rel="stylesheet" href="lookup.css">
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script src="lib/handlebars.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script src="http://git.macropus.org/jquery-crossref/jquery.crossref.js"></script>
 <script src="lib/diff_match_patch.js"></script>
 <script src="lib/jquery.pretty-text-diff.js"></script>
 <script src="lib/jquery.deparam.js"></script>
+<script src="lib/handlebars.js"></script>
 <script src="lookup.js"></script>
 
 <form>
   <p>Enter a list of references, then press <button type="submit">Resolve</button></p>
-  <textarea></textarea>
+  <textarea name="input"></textarea>
 </form>
 
 <table>
@@ -21,8 +22,8 @@
     <tr>
       <th></th>
       <th>Output</th>
-      <th>Input</th>
       <th>Diff</th>
+      <th>Input</th>
     </tr>
   </thead>
   <tbody></tbody>
@@ -33,8 +34,8 @@
   	<div class="score score-{{confidence}}">{{score}}</div>
   </td>
   <td class="changed">
-  <article itemscope itemtype="http://schema.org/ScholarlyArticle">{{#each author}}<span itemprop="author">{{family}} {{given}}</span>{{#if @last}}{{else}}, {{/if}}{{/each}}{{#if etal}} et al{{/if}}. {{#if year}}<span itemprop="datePublished">{{year}}</span>.{{/if}} <a itemprop="url" href="{{URL}}"><span itemprop="title">{{title}}</span></a>. <span itemprop="journal">{{container-title}}</span> {{#if volume}}<span itemprop="volume">{{volume}}</span>{{/if}}{{#if issue}}(<span itemprop="issue">{{issue}}</span>){{/if}}{{#if page}}:<span itemprop="page">{{page}}</span>{{/if}}</article>
+    <article itemscope itemtype="http://schema.org/ScholarlyArticle">{{#each author}}<span itemprop="author">{{family}} {{given}}</span>{{#if @last}}{{else}}, {{/if}}{{/each}}{{#if etal}} et al{{/if}}. {{#if year}}<span itemprop="datePublished">{{year}}</span>.{{/if}} <a itemprop="url" href="{{URL}}"><span itemprop="title">{{title}}</span></a>. <span itemprop="journal">{{container-title}}</span> {{#if volume}}<span itemprop="volume">{{volume}}</span>{{/if}}{{#if issue}}(<span itemprop="issue">{{issue}}</span>){{/if}}{{#if page}}:<span itemprop="page">{{page}}</span>{{/if}}</article>
   </td>
-  <td class="original">{{ text }}</td>
   <td class="diff"></td>
+  <td class="original">{{ text }}</td>
 </script>
