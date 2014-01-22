@@ -3,6 +3,8 @@ $(function() {
     var output = $('tbody');
     var template = Handlebars.compile($('#template').html());
 
+    $.ajaxQueue.concurrent(5);
+
     // handle form submissions
     $('form').on('submit', function(event) {
         event.preventDefault();
