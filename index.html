@@ -34,7 +34,7 @@
   	<div class="score score-{{confidence}}">{{score}}</div>
   </td>
   <td class="changed">
-    <article itemscope itemtype="http://schema.org/ScholarlyArticle">{{#each author}}<span itemprop="author">{{family}} {{given}}</span>{{#if @last}}{{else}}, {{/if}}{{/each}}{{#if etal}} et al{{/if}}. {{#if year}}<span itemprop="datePublished">{{year}}</span>.{{/if}} <a itemprop="url" href="{{URL}}"><span itemprop="title">{{title}}</span></a>. <span itemprop="journal">{{container-title}}</span> {{#if volume}}<span itemprop="volume">{{volume}}</span>{{/if}}{{#if issue}}(<span itemprop="issue">{{issue}}</span>){{/if}}{{#if page}}:<span itemprop="page">{{page}}</span>{{/if}}</article>
+    <article itemscope itemtype="http://schema.org/ScholarlyArticle">{{#each author}}<span itemprop="author">{{family}} {{given}}</span>{{#if @last}}{{else}}, {{/if}}{{/each}}{{#if etal}} et al{{/if}}. {{#if year}}<span itemprop="datePublished">{{year}}</span>.{{/if}} <a itemprop="url" target="_blank" href="{{URL}}"><span itemprop="title">{{title}}</span></a>. <span itemprop="journal">{{container-title}}</span> {{#if volume}}<span itemprop="volume">{{volume}}</span>{{/if}}{{#if issue}}(<span itemprop="issue">{{issue}}</span>){{/if}}{{#if page}}:<span itemprop="page">{{page}}</span>{{/if}}</article>
   </td>
   <td class="diff"></td>
   <td class="original">{{ text }}</td>
