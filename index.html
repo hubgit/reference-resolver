@@ -8,6 +8,8 @@
 <script src="http://git.macropus.org/jquery-ajax-queue/jquery.ajaxQueue.js"></script>
 <script src="http://git.macropus.org/jquery-microdata/jquery.microdata.js"></script>
 <script src="lib/handlebars.js"></script>
+<script src="lib/diff_match_patch.js"></script>
+<script src="lib/jquery.pretty-text-diff.js"></script>
 <script src="lib/jquery.deparam.js"></script>
 <script src="search.js"></script>
 
@@ -16,19 +18,25 @@
 	<textarea></textarea>
 </form>
 
-<ol></ol>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Output</th>
+<th>Input</th>
+<th>Diff</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
 
 <script id="template" type="text/x-handlebars-template">
-  <li>
-  	<div class="score">{{score}}</div>
-
-	<article itemscope itemtype="http://schema.org/ScholarlyArticle">
-	  	{{#each au}}<span itemprop="author">{{.}}</span>{{#if @last}}{{else}}, {{/if}}{{/each}}.
-	  	{{#if url}}<a itemprop="url" href="{{url}}">{{/if}}<span itemprop="title">{{atitle}}</span>{{#if url}}</a>{{/if}}.
-	  	<span itemprop="journal">{{jtitle}}</span>
-	  	{{#if volume}}<span itemprop="volume">{{volume}}</span>{{/if}}{{#if issue}}(<span itemprop="issue">{{issue}}</span>){{/if}}{{#if spage}}:<span itemprop="page">{{spage}}</span>{{/if}}
-    </article>
-
-    <div class="input">{{text}}</div>
-  </li>
+  	<td>
+  		<div class="score score-{{confidence}}">{{score}}</div>
+  	</td>
+  	<td class="changed">
+		<article itemscope itemtype="http://schema.org/ScholarlyArticle">{{#each author}}<span itemprop="author">{{family}} {{given}}</span>{{#if @last}}{{else}}, {{/if}}{{/each}}{{#if etal}} et al{{/if}}. {{#if year}}<span itemprop="datePublished">{{year}}</span>.{{/if}} <a itemprop="url" href="{{URL}}"><span itemprop="title">{{title}}</span></a>. <span itemprop="journal">{{container-title}}</span> {{#if volume}}<span itemprop="volume">{{volume}}</span>{{/if}}{{#if issue}}(<span itemprop="issue">{{issue}}</span>){{/if}}{{#if page}}:<span itemprop="page">{{page}}</span>{{/if}}</article>
+    </td>
+    <td class="original">{{ text }}</td>
+    <td class="diff"></td>
 </script>
