@@ -1,6 +1,6 @@
 <!doctype html>
 <meta charset="utf-8">
-<title>Reference Lookup</title>
+<title>Reference Resolver</title>
 
 <link rel="stylesheet" href="lookup.css">
 
@@ -12,29 +12,29 @@
 <script src="lookup.js"></script>
 
 <form>
-	<p>Enter a list of references, then press <button type="submit">Resolve</button></p>
-	<textarea></textarea>
+  <p>Enter a list of references, then press <button type="submit">Resolve</button></p>
+  <textarea></textarea>
 </form>
 
 <table>
-<thead>
-<tr>
-<th></th>
-<th>Output</th>
-<th>Input</th>
-<th>Diff</th>
-</tr>
-</thead>
-<tbody></tbody>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Output</th>
+      <th>Input</th>
+      <th>Diff</th>
+    </tr>
+  </thead>
+  <tbody></tbody>
 </table>
 
 <script id="template" type="text/x-handlebars-template">
-  	<td>
-  		<div class="score score-{{confidence}}">{{score}}</div>
-  	</td>
-  	<td class="changed">
-		<article itemscope itemtype="http://schema.org/ScholarlyArticle">{{#each author}}<span itemprop="author">{{family}} {{given}}</span>{{#if @last}}{{else}}, {{/if}}{{/each}}{{#if etal}} et al{{/if}}. {{#if year}}<span itemprop="datePublished">{{year}}</span>.{{/if}} <a itemprop="url" href="{{URL}}"><span itemprop="title">{{title}}</span></a>. <span itemprop="journal">{{container-title}}</span> {{#if volume}}<span itemprop="volume">{{volume}}</span>{{/if}}{{#if issue}}(<span itemprop="issue">{{issue}}</span>){{/if}}{{#if page}}:<span itemprop="page">{{page}}</span>{{/if}}</article>
-    </td>
-    <td class="original">{{ text }}</td>
-    <td class="diff"></td>
+  <td>
+  	<div class="score score-{{confidence}}">{{score}}</div>
+  </td>
+  <td class="changed">
+  <article itemscope itemtype="http://schema.org/ScholarlyArticle">{{#each author}}<span itemprop="author">{{family}} {{given}}</span>{{#if @last}}{{else}}, {{/if}}{{/each}}{{#if etal}} et al{{/if}}. {{#if year}}<span itemprop="datePublished">{{year}}</span>.{{/if}} <a itemprop="url" href="{{URL}}"><span itemprop="title">{{title}}</span></a>. <span itemprop="journal">{{container-title}}</span> {{#if volume}}<span itemprop="volume">{{volume}}</span>{{/if}}{{#if issue}}(<span itemprop="issue">{{issue}}</span>){{/if}}{{#if page}}:<span itemprop="page">{{page}}</span>{{/if}}</article>
+  </td>
+  <td class="original">{{ text }}</td>
+  <td class="diff"></td>
 </script>
