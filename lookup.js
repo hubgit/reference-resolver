@@ -1,13 +1,11 @@
+var console = window.console || { log: function() {} };
+
 $(function() {
     var input = $('textarea');
     var form = $('form');
     var output = $('tbody');
 
     var template = Handlebars.compile($('#template').html());
-
-    $.ajaxQueue = function(params) {
-        return $.ajax(params);
-    };
 
     var show = function(row, data, text, score) {
         console.log(data);
@@ -43,10 +41,10 @@ $(function() {
     };
 
     var fetch = function (row, url, text, score) {
-        var request = $.ajaxQueue({
+        var request = $.ajax({
             url: url.replace(/dx.doi.org/, 'data.crossref.org'),
             headers: { 'Accept': 'application/citeproc+json' }
-        }, { priority: true, tries: 1 });
+        });
 
         request.done(function(data) {
             show(row, data, text, score);
@@ -58,7 +56,7 @@ $(function() {
     var search = function(index, text) {
         var row = $('<tr/>').appendTo(output);
 
-        var request = $.ajaxQueue({
+        var request = $.ajax({
             url: 'http://search.crossref.org/dois',
             data: { q: text },
             dataType: 'json'
@@ -79,11 +77,8 @@ $(function() {
 
     var update = function(event) {
         event.preventDefault();
-
         output.empty();
-
         var items = input.val().split("\n");
-
         $.each(items, search);
     };
 
@@ -92,6 +87,5 @@ $(function() {
     // load the example list
     $.get('example.txt', function(data) {
         input.val(data);
-        form.submit();
     }, 'text');
 })
