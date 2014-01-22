@@ -1,0 +1,68 @@
+Abby SS, Tannier E, Gouy M, Daubin V. 2012. Lateral gene transfer as a support for the tree of life. Proceedings of the National Academy of Sciences of the United States of America
+Adey A, Morrison H, Asan XX, Kitzman J, Turner E, Stackhouse B, MacKenzie A, Caruccio N, Zhang X, Shendure J. 2010. Rapid, low-input, low-bias construction of shotgun fragment libraries by high-density in vitro transposition. Genome Biology 11(12):R119
+Altschul SF, Madden TL, Schöffer AA, Zhang J, Zhang Z, Miller W, Lipman DJ. 1997. Gapped BLAST and PSI-BLAST: a new generation of protein database search programs. Nucleic Acids Research 25(17):3389-3402
+Béjà O, Aravind L, Koonin EV, Suzuki MT, Hadd A, Nguyen LP, Jovanovich SB, Gates CM, Feldman RA, Spudich JL et al. 2000. Bacterial rhodopsin: evidence for a new type of phototrophy in the sea. Science 289(5486):1902-1906
+Bik HM, Porazinska DL, Creer S, Caporaso JG, Knight R, Thomas WK. 2012. Sequencing our way towards understanding global eukaryotic biodiversity. Trends in Ecology & Evolution 27(4):233-243
+Blainey PC. 2013. The future is now: single-cell genomics of bacteria and archaea. FEMS Microbiology Reviews 37(3):407-427
+Boussau B, Szöllősi GJ, Duret L, Gouy M, Tannier E, Daubin V. 2012. Genome-scale coestimation of species and gene trees. Genome Research 23:323-330
+Brady A, Salzberg SL. 2009. Phymm and phymmbl: metagenomic phylogenetic classification with interpolated markov models. Nature Methods 6(9):673-676
+Brady A, Salzberg SL. 2011. Phymmbl expanded: confidence scores, custom databases, parallelization and more. Nature Methods 8(5):367
+Camacho C, Coulouris G, Avagyan V, Ma N, Papadopoulos J, Bealer K, Madden T. 2009. BLAST+: architecture and applications. BMC Bioinformatics 10(1):421
+Caporaso JG, Kuczynski J, Stombaugh J, Bittinger K, Bushman FD, Costello EK, Fierer N, Pena AG, Goodrich JK, Gordon JI et al. 2010. QIIME allows analysis of high-throughput community sequencing data. Nature Methods 7(5):335-336
+Chen K, Pachter L. 2005. Bioinformatics for whole-genome shotgun sequencing of microbial communities. PLoS Computational Biology 1(2):e24
+Diaz N, Krause L, Goesmann A, Niehaus K, Nattkemper T. 2009. TACOA - Taxonomic classification of environmental genomic fragments using a kernelized nearest neighbor approach. BMC Bioinformatics 10(1):56
+Dick GJ, Andersson AF, Baker BJ, Simmons SL, Thomas BC, Yelton AP, Banfield JF. 2009. Community-wide analysis of microbial genome sequence signatures. Genome Biology 10(8):R85
+Eddy SR. 2011. Accelerated Profile HMM Searches. PLoS Computational Biology 7(10):e1002195
+Eisen JA. 1998. Phylogenomics: improving functional predictions for uncharacterized genes by evolutionary analysis. Genome Research 8(3):163-167
+Eisen JA. 2007. Environmental shotgun sequencing: its potential and challenges for studying the hidden world of microbes. PLoS Biology 5(3):e82
+Eisen JA. 2012. Phylogenetic and phylogenomic approaches to analysis of microbial communities. In: The social biology of microbial communities – a report from the national academy of sciences forum on microbial threats. National Academy of Sciences. 180-212
+Evans SN, Matsen FA. 2012. The phylogenetic Kantorovich-Rubinstein metric for environmental sequence samples. Journal of the Royal Statistical Society: Series B (Statistical Methodology) 74(3):569-592
+Faith DP. 1992. Conservation evaluation and phylogenetic diversity. Biological Conservation 61(1):1-10
+Ghosh TS, Mohammed MH, Komanduri D, Mande SS. 2011. Provide: a software tool for accurate estimation of viral diversity in metagenomic samples. Bioinformation 6(2):91-4
+Gori F, Folino G, Jetten MSM, Marchiori E. 2011. MTR: taxonomic annotation of short metagenomic reads using clustering at multiple taxonomic ranks. Bioinformatics 27(2):196-203
+Haque MM, Ghosh TS, Komanduri D, Mande SS. 2009. SOrt-ITEMS: sequence orthology based approach for improved taxonomic estimation of metagenomic sequences. Bioinformatics 25(14):1722-1730
+Hugenholtz P, Goebel BM, Pace NR. 1998. Impact of culture-independent studies on the emerging phylogenetic view of bacterial diversity. Journal of Bacteriology 180(18):4765-4774
+Huson DH, Auch AF, Qi J, Schuster SC. 2007. MEGAN analysis of metagenomic data. Genome Research 17(3):377-386
+Jolley KA, Bliss CM, Bennett JS, Bratcher HB, Brehony C, Colles FM, Wimalarathna H, Harrison OB, Sheppard SK, Cody AJ et al. 2012. Ribosomal multilocus sequence typing: universal characterization of bacteria from domain to strain. Microbiology 158(Pt 4):1005-1015
+Kembel SW, Eisen JA, Pollard KS, Green JL. 2011. The phylogenetic diversity of metagenomes. PLoS ONE 6(8):e23214
+Kiełbasa SM, Wan R, Sato K, Horton P, Frith MC. 2011. Adaptive seeds tame genomic sequence comparison. Genome Research 21:487-493
+Kunin V, Copeland A, Lapidus A, Mavromatis K, Hugenholtz P. 2008. A bioinformatician’s guide to metagenomics. Microbiology and Molecular Biology Reviews 72(4):557-578
+Lang JM, Darling AE, Eisen JA. 2013. Phylogeny of bacterial and archaeal genomes using conserved genes: supertrees and supermatrices. PLoS ONE 8(4):e62510
+Langmead B, Trapnell C, Pop M, Salzberg S. 2009. Ultrafast and memory-efficient alignment of short DNA sequences to the human genome. Genome Biology 10(3):R25
+Lasken RS. 2012. Genomic sequencing of uncultured microorganisms from single cells. Nature Reviews Microbiology 10(9):631-640
+Liu B, Gibbons T, Ghodsi M, Pop M. 2010. Metaphyler: taxonomic profiling for metagenomic sequences. In: 2010 IEEE international conference on bioinformatics and biomedicine (BIBM). IEEE. 95-100
+Löytynoja A, Vilella AJ, Goldman N. 2012. Accurate extension of multiple sequence alignments using a phylogeny-aware graph algorithm. Bioinformatics 28(13):1684-1691
+Lozupone C, Knight R. 2005. Unifrac: a new phylogenetic method for comparing microbial communities. Applied and Environmental Microbiology 71(12):8228-8235
+Matsen FA, Evans SN. 2013. Edge principal components and squash clustering: using the special structure of phylogenetic placement data for sample comparison. PLoS ONE 8:e56859
+Matsen FA, Hoffman NG, Gallagher A, Stamatakis A. 2012. A format for phylogenetic placements. PLoS ONE 7(2):e31009
+Matsen FA, Kodner RB, Armbrust EV. 2010. pplacer: linear time maximum-likelihood and Bayesian phylogenetic placement of sequences onto a fixed reference tree. BMC Bioinformatics 11(1):538
+McCoy CO, Matsen FA. 2013. Abundance-weighted phylogenetic diversity measures distinguish microbial community states and are robust to sampling depth. PeerJ 1:e157
+McHardy AC, Martín HG, Tsirigos A, Hugenholtz P, Rigoutsos I. 2006. Accurate phylogenetic classification of variable-length DNA fragments. Nature Methods 4(1):63-72
+Meyer F, Paarmann D, D’souza M, Olson R, Glass EM, Kubal M, Paczian T, Rodriguez A, Stevens R, Wilke A et al. 2008. The metagenomics rast server–a public resource for the automatic phylogenetic and functional analysis of metagenomes. BMC Bioinformatics 9(1):386
+Miller C, Baker B, Thomas B, Singer S, Banfield J. 2011. EMIRGE: reconstruction of full-length ribosomal genes from microbial community short read sequencing data. Genome Biology 12(5):R44
+Mohammed MH, Chadaram S, Komanduri D, Ghosh TS, Mande SS. 2011. Eu-detect: an algorithm for detecting eukaryotic sequences in metagenomic data sets. Journal of Biosciences 36(4):709-717
+Morgan JL, Darling AE, Eisen JA. 2010. Metagenomic sequencing of an in vitro-simulated microbial community. PLoS ONE 5(4):e10209
+Ondov B, Bergman N, Phillippy A. 2011. Interactive metagenomic visualization in a Web browser. BMC Bioinformatics 12(1):385
+Patil KR, Haider P, Pope PB, Turnbaugh PJ, Morrison M, Scheffer T, McHardy AC. 2011. Taxonomic metagenome sequence assignment with structured output models. Nature Methods 8:191-192
+Price MN, Dehal PS, Arkin AP. 2010. FastTree 2 – approximately maximum-likelihood trees for large alignments. PLoS ONE 5(3):e9490
+Rinke C, Schwientek P, Sczyrba A, Ivanova NN, Anderson IJ, Cheng J-F, Darling A, Malfatti S, Swan BK, Gies EA et al. 2013. Insights into the phylogeny and coding potential of microbial dark matter. Nature 499:431-437
+Rosen GL, Reichenberger ER, Rosenfeld AM. 2011. NBC: the Nave Bayes Classification tool webserver for taxonomic classification of metagenomic reads. Bioinformatics 27(1):127-129
+Schloss PD, Westcott SL, Ryabin T, Hall JR, Hartmann M, Hollister EB, Lesniewski RA, Oakley BB, Parks DH, Robinson CJ et al. 2009. Introducing mothur: open-source, platform-independent, community-supported software for describing and comparing microbial communities. Applied and Environmental Microbiology 75(23):7537-7541
+Segata N, Waldron L, Ballarini A, Narasimhan V, Jousson O, Huttenhower C. 2012. Metagenomic microbial community profiling using unique clade-specific marker genes. Nature Methods 9(8):811-814
+Sharpton TJ, Riesenfeld SJ, Kembel SW, Ladau J, O’Dwyer JP, Green JL, Eisen JA, Pollard KS. 2011. Phylotu: a high-throughput procedure quantifies microbial community diversity and resolves novel taxa from metagenomic data. PLoS Computational Biology 7(1):e1001061
+Shih PM, Wu D, Latifi A, Axen SD, Fewer DP, Talla E, Calteau A, Cai F, de Marsac NT, Rippka R et al. 2013. Improving the coverage of the cyanobacterial phylum using diversity-driven genome sequencing. Proceedings of the National Academy of Sciences of the United States of America 110(3):1053-1058
+Stark M, Berger S, Stamatakis A, von Mering C. 2010. MLTreeMap - accurate Maximum Likelihood placement of environmental DNA sequences into taxonomic and functional reference phylogenies. BMC Genomics 11(1):461
+Sunagawa S, Mende DR, Zeller G, Izquierdo-Carrasco F, Berger SA, Kultima JR, Coelho LP, Arumugam M, Tap J, Nielsen HB et al. 2013. Metagenomic species profiling using universal phylogenetic marker genes. Nature Methods 10:1196-1199
+Szãllåsi GJ, Boussau B, Abby SS, Tannier E, Daubin V. 2012. Phylogenetic modeling of lateral gene transfer reconstructs the pattern and relative timing of speciations. Proceedings of the National Academy of Sciences of the United States of America 109(43):17513-17518
+Thomas T, Gilbert J, Meyer F. 2012. Metagenomics - a guide from sampling to data analysis. Microbial Informatics and Experimentation 2:3
+Tringe SG, Von Mering C, Kobayashi A, Salamov AA, Chen K, Chang HW, Podar M, Short JM, Mathur EJ, Detter JC et al. 2005. Comparative metagenomics of microbial communities. Science 308(5721):554-557
+Tyson GW, Chapman J, Hugenholtz P, Allen EE, Ram RJ, Richardson PM, Solovyev VV, Rubin EM, Rokhsar DS, Banfield JF. 2004. Community structure and metabolism through reconstruction of microbial genomes from the environment. Nature 428(6978):37-43
+Venter JC, Remington K, Heidelberg JF, Halpern AL, Rusch D, Eisen JA, Wu D, Paulsen I, Nelson KE, Nelson W et al. 2004. Environmental genome shotgun sequencing of the Sargasso Sea. Science 304(5667):66-74
+Wang Q, Garrity GM, Tiedje JM, Cole JR. 2007. Naive bayesian classifier for rapid assignment of rrna sequences into the new bacterial taxonomy. Applied and Environmental Microbiology 73(16):5261-5267
+Woyke T, Tighe D, Mavromatis K, Clum A, Copeland A, Schackwitz W, Lapidus A, Wu D, McCutcheon JP, McDonald BR et al. 2010. One bacterial cell, one complete genome. PLoS ONE 5(4):e10314
+Wu D, Hugenholtz P, Mavromatis K, Pukall R, Dalin E, Ivanova NN, Kunin V, Goodwin L, Wu M, Tindall BJ et al. 2009. A phylogeny-driven genomic encyclopaedia of bacteria and archaea. Nature 462(7276):1056-1060
+Wu D, Jospin G, Eisen JA. 2013. Systematic identification of gene families for use as markers for phylogenetic and phylogeny-driven ecological studies of bacteria and archaea and their major subgroups. PLoS ONE 8(10):e77033
+Wu M, Scott AJ. 2012. Phylogenomic analysis of bacterial and archaeal sequences with amphora2. Bioinformatics 28(7):1033-1034
+Wu M, Eisen J. 2008. A simple, fast, and accurate method of phylogenomic inference. Genome Biology 9(10):R151
+Yatsunenko T, Rey FE, Manary MJ, Trehan I, Dominguez-Bello MG, Contreras M, Magris M, Hidalgo G, Baldassano RN, Anokhin AP et al. 2012. Human gut microbiome viewed across age and geography. Nature 486:222-227
+Zhao Y, Tang H, Ye Y. 2011. RAPSearch2: a fast and memory-efficient protein similarity search tool for next generation sequencing data. Bioinformatics 28(1):125-126
